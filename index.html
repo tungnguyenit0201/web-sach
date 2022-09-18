@@ -1,0 +1,1372 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="icon" type="image/png" href="images/logo-CLB.png">
+		<title>BAIT - UIT Book and action club</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  	<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+		
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- Icomoon Icon Fonts-->
+		<link rel="stylesheet" href="css/icomoon.css">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+
+		<!-- SmartMenus jQuery Bootstrap Addon CSS -->
+	    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+
+		<!-- Magnific Popup -->
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		
+		<!-- popup -->
+		<link rel="stylesheet" href="css/header.popup.css">
+
+		<!-- Flexslider  -->
+		<link rel="stylesheet" href="css/flexslider.css">
+
+		<!-- Theme style  -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- link icon -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+		<!-- Modernizr JS -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+			
+		<div class="fh5co-loader"></div>
+
+		<!-- Login Modal -->  
+	  	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" data-toggle="validator" aria-labelledby="myModalLabel" aria-hidden="true">
+	    	<div class="modal-dialog">
+	      		<div class="modal-content">                      
+	        		<div class="modal-body">
+	        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          			<h4>Log in</h4>
+	          			<form class="my-modal" action="">
+							<div class="form-sub-w3">
+								<input type="text" placeholder="Student code/Email" required="true">
+								<div class="icon-w3"><i class="fa fa-user" aria-hidden="true"></i></div>
+							</div>
+							<div class="form-sub-w3">
+								<input id="login-password-field" type="password" placeholder="Password" required="true">
+								<span toggle="#login-password-field" class="fa fa-fw fa-eye-slash field-icon toggle-password"></span>
+								<div class="icon-w3"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+							</div>
+							<label class="anim">
+								<input type="checkbox" class="checkbox">
+								<span>Remember me</span> 
+								<a href="#">Forgot password?</a>
+							</label> 
+							<!-- <div class="clear"></div> -->
+							<div class="submit-agileits">
+								<input type="submit" value="Log in">
+							</div>
+	          			</form>
+	        		</div>                        
+	     		 </div><!-- /.modal-content -->
+	    	</div><!-- /.modal-dialog -->
+	  	</div>
+	  	<!-- Register Modal -->  
+	  	<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" data-toggle="validator" aria-labelledby="myModalLabel" aria-hidden="true">
+	    	<div class="modal-dialog">
+	      		<div class="modal-content">                      
+	        		<div class="modal-body">
+	        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	          			<h4>Register</h4>
+	          			<form class="my-modal" action="">
+							<div class="form-sub-w3">
+								<input type="text" placeholder="Student code" required="true">
+								<div class="icon-w3"><i class="fa fa-user" aria-hidden="true"></i></div>
+							</div>
+							<div class="form-sub-w3">
+								<input type="email" placeholder="Email: studentcode@gm.uit.edu.vn" required="true" pattern=".+@gm.uit.edu.vn">
+								<div class="icon-w3"><i class="far fa-envelope" aria-hidden="true"></i></div>
+							</div>
+							<div class="form-sub-w3">
+								<input id="reg-password-field" type="password" placeholder="Enter the password" required="true">
+								<span toggle="#reg-password-field" class="fa fa-fw fa-eye-slash field-icon toggle-password"></span>
+								<div class="icon-w3"><i class="fa fa-unlock-alt" aria-hidden="true"></i></div>
+							</div>
+							<div class="form-sub-w3">
+								<span id="message"></span>
+								<input id="confirm-password-field" type="password" placeholder="Re-enter Password" required="true">
+								<span toggle="#confirm-password-field" class="fa fa-fw fa-eye-slash field-icon toggle-password"></span>
+								
+								<div class="icon-w3"><i class="fas fa-check-circle" aria-hidden="true"></i></div>
+							</div>
+							<div class="submit-agileits">
+								<input type="submit" value="Register">
+							</div>
+	          			</form>
+	        		</div>                        
+	     		 </div><!-- /.modal-content -->
+	    	</div><!-- /.modal-dialog -->
+	  	</div>
+
+		<div id="page">
+			<nav class="fh5co-nav" role="navigation">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="top-menu">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-7 text-left menu-1">
+										<ul>
+											<li class="active"><a href="index.html">Home</a></li>
+											<li class="has-dropdown">
+												<a href="category.html">Category</a>
+												<ul class="dropdown">
+													<li><a href="category.html">All</a></li>
+													<li><a href="category.html">Vietnamese literature</a></li>
+													<li><a href="category.html">Foreign literature</a></li>
+													<li><a href="category.html">Love novel</a></li>
+													<li><a href="category.html">Martial arts novel</a></li>
+													<li><a href="category.html">Children's book</a></li>
+													<li><a href="category.html">Comic</a></li>
+													<li><a href="category.html">History - Memoirs</a></li>
+													<li><a href="category.html">Economic book</a></li>
+													<li><a href="category.html">Culture - Social</a></li>
+													<li><a href="category.html">Textbook</a></li>
+													<li><a href="category.html">Dictionary</a></li>
+													<li><a href="category.html">Foreign Language</a></li>
+													<li><a href="category.html">Thesis - Dissertation</a></li>
+												</ul>
+											</li>
+											<li><a href="blog.html">Blog</a></li>
+											<li><a href="about.html">About</a></li>
+											<li><a href="contact.html">Contact</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-5">
+										<ul class="fh5co-social-icons">											
+											<li class="pull-left my-btn"><div class="login"><button type="submit" data-toggle="modal" data-target="#login-modal">Login</button></a></div></li>
+											<li class="pull-left my-btn"><div class="login"><button type="submit" data-toggle="modal" data-target="#register-modal">Register</button></a></div></li>
+
+											<div class="clearfix"></div>
+											<li class="my-search"><!-- search box -->
+								              	<div class="aa-search-box">
+								                	<form action="">
+								                  		<input type="text" name="" id="" placeholder="Search here...">
+								                  		<button type="submit"><span class="fa fa-search"></span></button>
+								                	</form>
+								              	</div>
+								              <!-- / search box --> 
+								          	</li>
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="col-xs-12 text-center menu-2 ">
+							<div id="fh5co-logo">
+								<h1>
+									<a href="index.html">
+										<span>Bait.</span>
+										<small><img src="images/logo-CLB.png"></small>
+									</a>
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<aside id="fh5co-hero">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="flexslider animate-box">
+								<ul class="slides">
+								   	<li style="background-image: url(images/code-dao-ky-su.jpg);">
+								   		<div class="overlay-gradient"></div>
+								   		<div class="container-fluid">
+								   			<div class="row">
+									   			<div class="col-md-10 col-md-offset-1 slider-text">
+									   				<div class="slider-text-inner">
+									   					<h1><i class="fas fa-quote-left"></i> Programmer is not just knowing code. <i class="fas fa-quote-right"></i></h1>
+															<h2>Ha Huy Hoang</h2>
+									   				</div>
+									   			</div>
+									   		</div>
+								   		</div>
+								   	</li>
+								   	<li style="background-image: url(images/anh-khong-muon-de-em-mot-minh-slide.jpg);">
+								   		<div class="overlay-gradient"></div>
+								   		<div class="container-fluid">
+								   			<div class="row">
+									   			<div class="col-md-10 col-md-offset-1 slider-text">
+									   				<div class="slider-text-inner">
+									   					<h1><i class="fas fa-quote-left"></i> The journey of life left only the last station, they wanted to stop, watch the many scenery on both sides of the road, even if it was just a blooming flower, a falling leaf ... <i class="fas fa-quote-right"></i></h1>
+															<h2>Diep Lac Vo Tam</h2>
+									   				</div>
+									   			</div>
+									   		</div>
+								   		</div>
+								   	</li>
+								   	<li style="background-image: url(images/nha-gia-kim1.png);">
+								   		<div class="overlay-gradient"></div>
+								   		<div class="container-fluid">
+								   			<div class="row">
+									   			<div class="col-md-10 col-md-offset-1 slider-text">
+									   				<div class="slider-text-inner">
+									   					<h1><i class="fas fa-quote-left"></i> The seemingly simple things in life are really extraordinary things, only scholars can understand. <i class="fas fa-quote-right"></i></h1>
+															<h2>Paulo Coelho</h2>
+									   				</div>
+									   			</div>
+									   		</div>
+								   		</div>
+								   	</li>
+								   	<li style="background-image: url(images/chuyen-con-meo-day-hai-au-bay.jpg);">
+								   		<div class="overlay-gradient"></div>
+								   		<div class="container-fluid">
+								   			<div class="row">
+									   			<div class="col-md-10 col-md-offset-1 slider-text">
+									   				<div class="slider-text-inner">
+									   					<h1><i class="fas fa-quote-left"></i> Only those who dare may fly. <i class="fas fa-quote-right"></i></h1>
+															<h2>Luis Sepúlveda</h2>
+									   				</div>
+									   			</div>
+									   		</div>
+								   		</div>
+								   	</li>	
+								   	<li style="background-image: url(images/tuoi-tre-dang-gia-bao-nhieu.jpg);">
+								   		<div class="overlay-gradient"></div>
+								   		<div class="container-fluid">
+								   			<div class="row">
+									   			<div class="col-md-10 col-md-offset-1 slider-text">
+									   				<div class="slider-text-inner">
+									   					<h1><i class="fas fa-quote-left"></i> Life is a movie in which everyone plays a role. So why not shine in the play of your own life? <i class="fas fa-quote-right"></i></h1>
+															<h2>Rosie Nguyen</h2>
+									   				</div>
+									   			</div>
+									   		</div>
+								   		</div>
+								   	</li>	   	
+							  	</ul>
+						  	</div>
+						</div>
+						<div class="col-md-4">
+							<div class="featured text-center animate-box" style="background-image: url(images/hinh-anh-cuon-sach-dep-27.jpg);">
+								<div class="desc">
+									<div class="border p-3">
+										<span class="date">__Quotes__<i class="fas fa-feather-alt"></i></span>
+										<h3><i class="fas fa-quote-left"></i> The difference between stupidity and genius is that genius has its limits. <i class="fas fa-quote-right"></i></h3>
+										<span class="category">Albert Einstein</span>
+									</div>
+								</div>
+							</div>
+							<div class="featured text-center animate-box" style="background-image: url(images/carousel3.jpg);">
+								<div class="desc">
+									<div class="border p-3">
+										<span class="date">__Quotes__<i class="fas fa-feather-alt"></i></span>
+										<h3><i class="fas fa-quote-left"></i> Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning. <i class="fas fa-quote-right"></i></h3>
+										<span class="category">Albert Einstein</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
+
+			<div id="fh5co-blog-popular">
+				<div class="container">
+					<div class="row animate-box">
+						<div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+							<h2><span>Popular Books</span></h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-6 tab-pane">
+							<div class="fh5co-blog animate-box">	
+								<a href="#">
+									<div class="img-card-btn">
+										<img class="img-responsive" src="images/mai_mai_la_bao_xa.jpg" alt="">
+										<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+									</div>
+								</a>
+								
+								<div class="blog-text">
+									<h3><a href="#">Mai mai la bao xa</a></h3>
+									<span class="category">Diep Lac Vo Tam</span>
+								</div> 
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 tab-pane">
+							<div class="fh5co-blog animate-box">	
+								<a href="#">
+									<div class="img-card-btn">
+										<img class="img-responsive" src="images/mai_mai_la_bao_xa.jpg" alt="">
+										<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+									</div>
+								</a>
+								
+								<div class="blog-text">
+									<h3><a href="#">Mai mai la bao xa</a></h3>
+									<span class="category">Diep Lac Vo Tam</span>
+								</div> 
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 tab-pane">
+							<div class="fh5co-blog animate-box">	
+								<a href="#">
+									<div class="img-card-btn">
+										<img class="img-responsive" src="images/mai_mai_la_bao_xa.jpg" alt="">
+										<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+									</div>
+								</a>
+								
+								<div class="blog-text">
+									<h3><a href="#">Mai mai la bao xa</a></h3>
+									<span class="category">Diep Lac Vo Tam</span>
+								</div> 
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-6 tab-pane">
+							<div class="fh5co-blog animate-box">	
+								<a href="#">
+									<div class="img-card-btn">
+										<img class="img-responsive" src="images/mai_mai_la_bao_xa.jpg" alt="">
+										<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+									</div>
+								</a>
+								
+								<div class="blog-text">
+									<h3><a href="#">Mai mai la bao xa</a></h3>
+									<span class="category">Diep Lac Vo Tam</span>
+								</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="fh5co-blog-themed">
+				<div class="container">
+					<div class="row animate-box">
+						<div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+							<h2><span>Themed Books</span></h2>
+						</div>
+					</div>
+					<!-- Products section -->
+				  	<div id="aa-product">
+					    <div class="container">
+					      <div class="row">
+					        <div class="col-md-12">
+					          <div class="row">
+					            <div class="aa-product-area">
+					              <div class="aa-product-inner">
+					                <!-- start prduct navigation -->
+					                 <ul class="nav nav-tabs aa-products-tab">
+					                    <li class="active"><a href="#general_knowledge" data-toggle="tab"><b>General Knowledge</b></a></li>
+					                    <li><a href="#industry_group_basis" data-toggle="tab"><b>Industry Group Basis</b></a></li>
+					                    <li><a href="#comic" data-toggle="tab"><b>Comic</b></a></li>
+					                    <li><a href="#thesis_dissertation" data-toggle="tab"><b>Thesis - Dissertation</b></a></li>
+					                 </ul>
+					                  <!-- Tab panes -->
+					                  <div class="tab-content">
+					                    <!-- Start general_knowledge category -->
+					                    <div class="tab-pane fade in active" id="general_knowledge">
+					                      	<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/mai_mai_la_bao_xa.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Mai mai la bao xa</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/mai_mai_la_bao_xa.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Mai mai la bao xa</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/mai_mai_la_bao_xa.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Mai mai la bao xa</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/mai_mai_la_bao_xa.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Mai mai la bao xa</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+											</div>
+					                      	<a class="aa-browse-btn" href="category.html">Browse all Product <i class="fas fa-long-arrow-alt-right"></i></a>
+					                    </div>
+					                    <!-- / general_knowledge category -->
+					                    <!-- start industry_group_basis category -->
+					                    <div class="tab-pane fade" id="industry_group_basis">
+					                      	<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/all-in-love.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">All in love</a></h3>
+															<span class="category">Co Tay Tuoc</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/all-in-love.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">All in love</a></h3>
+															<span class="category">Co Tay Tuoc</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/all-in-love.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">All in love</a></h3>
+															<span class="category">Co Tay Tuoc</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/all-in-love.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">All in love</a></h3>
+															<span class="category">Co Tay Tuoc</span>
+														</div> 
+													</div>
+												</div>
+											</div>
+					                      	<a class="aa-browse-btn" href="category.html">Browse all Product <i class="fas fa-long-arrow-alt-right"></i></a>
+					                    </div>
+					                    <!-- / industry_group_basis category -->
+					                    <!-- start comic category -->
+					                    <div class="tab-pane fade" id="comic">
+					                       	<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/conan.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Tham tu lung danh Conan</a></h3>
+															<span class="category">Gosho Aoyama</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/conan.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Tham tu lung danh Conan</a></h3>
+															<span class="category">Gosho Aoyama</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/conan.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Tham tu lung danh Conan</a></h3>
+															<span class="category">Gosho Aoyama</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/conan.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Tham tu lung danh Conan</a></h3>
+															<span class="category">Gosho Aoyama</span>
+														</div> 
+													</div>
+												</div>
+											</div>
+					                      	<a class="aa-browse-btn" href="category.html">Browse all Product <i class="fas fa-long-arrow-alt-right"></i></a>
+					                    </div>
+					                    <!-- / comic category -->
+					                    <!-- start thesis_dissertation category -->
+					                    <div class="tab-pane fade" id="thesis_dissertation">
+					                       	<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/yeu-la-the.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Yeu la the</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/yeu-la-the.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Yeu la the</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/yeu-la-the.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Yeu la the</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/yeu-la-the.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Yeu la the</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+											</div>
+					                      	<a class="aa-browse-btn" href="category.html">Browse all Product <i class="fas fa-long-arrow-alt-right"></i></a>
+					                    </div>
+					                    <!-- / thesis_dissertation category -->
+					                  </div>       
+					              </div>
+					            </div>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+				  	</div>
+				  	<!-- / Products section -->
+				</div>
+			</div>
+
+			<div id="fh5co-blog-faculty">
+				<div class="container">
+					<div class="row animate-box">
+						<div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+							<h2><span>Books by Faculty</span></h2>
+						</div>
+					</div>
+					<!-- Products section -->
+				  	<div id="aa-product">
+					    <div class="container">
+					      <div class="row">
+					        <div class="col-md-12">
+					          <div class="row">
+					            <div class="aa-product-area">
+					              <div class="aa-product-inner">
+					                <!-- start prduct navigation -->
+					                 <ul class="nav nav-tabs aa-products-tab">
+					                    <li class="active"><a href="#computer_science" data-toggle="tab"><b>Computer Science</b></a></li>
+					                    <li><a href="#software_engineering" data-toggle="tab"><b>Software Engineering</b></a></li>
+					                    <li><a href="#computer_engineering" data-toggle="tab"><b>Computer Engineering</b></a></li>
+					                    <li><a href="#information_technology" data-toggle="tab"><b>Information Technology</b></a></li>
+					                    <li><a href="#information_systems" data-toggle="tab"><b>Information systems</b></a></li>
+					                    <li><a href="#computer_networks_and_communications" data-toggle="tab"><b>Computer networks and communications</b></a></li>
+					                 </ul>
+					                  <!-- Tab panes -->
+					                  <div class="tab-content">
+					                    <!-- Start computer_science category -->
+					                    <div class="tab-pane fade in active" id="computer_science">
+					                      	<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/thanh-xuan-tuoi-dep-cua-chung-ta.png" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Thanh xuan tuoi dep cua chung ta</a></h3>
+															<span class="category">Trieu Kien Kien</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/thanh-xuan-tuoi-dep-cua-chung-ta.png" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Thanh xuan tuoi dep cua chung ta</a></h3>
+															<span class="category">Trieu Kien Kien</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/thanh-xuan-tuoi-dep-cua-chung-ta.png" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Thanh xuan tuoi dep cua chung ta</a></h3>
+															<span class="category">Trieu Kien Kien</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/thanh-xuan-tuoi-dep-cua-chung-ta.png" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Thanh xuan tuoi dep cua chung ta</a></h3>
+															<span class="category">Trieu Kien Kien</span>
+														</div> 
+													</div>
+												</div>
+											</div>
+					                      	<a class="aa-browse-btn" href="category.html">Browse all Product <i class="fas fa-long-arrow-alt-right"></i></a>
+					                    </div>
+					                    <!-- / computer_science category -->
+					                    <!-- start software_engineering category -->
+					                    <div class="tab-pane fade" id="software_engineering">
+					                      	<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/all-in-love.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">All in love</a></h3>
+															<span class="category">Co Tay Tuoc</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/all-in-love.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">All in love</a></h3>
+															<span class="category">Co Tay Tuoc</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/all-in-love.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">All in love</a></h3>
+															<span class="category">Co Tay Tuoc</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/all-in-love.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">All in love</a></h3>
+															<span class="category">Co Tay Tuoc</span>
+														</div> 
+													</div>
+												</div>
+											</div>
+					                      	<a class="aa-browse-btn" href="category.html">Browse all Product <i class="fas fa-long-arrow-alt-right"></i></a>
+					                    </div>
+					                    <!-- / software_engineering category -->
+					                    <!-- start computer_engineering category -->
+					                    <div class="tab-pane fade" id="computer_engineering">
+					                       	<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/conan.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Tham tu lung danh Conan</a></h3>
+															<span class="category">Gosho Aoyama</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/conan.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Tham tu lung danh Conan</a></h3>
+															<span class="category">Gosho Aoyama</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/conan.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Tham tu lung danh Conan</a></h3>
+															<span class="category">Gosho Aoyama</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/conan.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Tham tu lung danh Conan</a></h3>
+															<span class="category">Gosho Aoyama</span>
+														</div> 
+													</div>
+												</div>
+											</div>
+					                      	<a class="aa-browse-btn" href="category.html">Browse all Product <i class="fas fa-long-arrow-alt-right"></i></a>
+					                    </div>
+					                    <!-- / computer_engineering category -->
+					                    <!-- start information_technology category -->
+					                    <div class="tab-pane fade" id="information_technology">
+					                       	<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/yeu-la-the.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Yeu la the</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/yeu-la-the.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Yeu la the</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/yeu-la-the.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Yeu la the</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/yeu-la-the.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Yeu la the</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+											</div>
+					                      	<a class="aa-browse-btn" href="category.html">Browse all Product <i class="fas fa-long-arrow-alt-right"></i></a>
+					                    </div>
+					                    <!-- / information_technology category -->
+					                    <!-- start information_systems category -->
+					                    <div class="tab-pane fade" id="information_systems">
+					                      	<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/all-in-love.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">All in love</a></h3>
+															<span class="category">Co Tay Tuoc</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/all-in-love.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">All in love</a></h3>
+															<span class="category">Co Tay Tuoc</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/all-in-love.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">All in love</a></h3>
+															<span class="category">Co Tay Tuoc</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/all-in-love.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">All in love</a></h3>
+															<span class="category">Co Tay Tuoc</span>
+														</div> 
+													</div>
+												</div>
+											</div>
+					                      	<a class="aa-browse-btn" href="category.html">Browse all Product <i class="fas fa-long-arrow-alt-right"></i></a>
+					                    </div>
+					                    <!-- /information_systems category -->
+					                    <!-- Start computer_networks_and_communications category -->
+					                    <div class="tab-pane fade" id="computer_networks_and_communications">
+					                      	<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/mai_mai_la_bao_xa.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Mai mai la bao xa</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/mai_mai_la_bao_xa.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Mai mai la bao xa</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/mai_mai_la_bao_xa.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Mai mai la bao xa</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+												<div class="col-md-3 col-sm-3 col-xs-6">
+													<div class="fh5co-blog animate-box">	
+														<a href="#">
+															<div class="img-card-btn">
+																<img class="img-responsive" src="images/mai_mai_la_bao_xa.jpg" alt="">
+																<a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Borrow</a>
+															</div>
+														</a>
+														
+														<div class="blog-text">
+															<h3><a href="#">Mai mai la bao xa</a></h3>
+															<span class="category">Diep Lac Vo Tam</span>
+														</div> 
+													</div>
+												</div>
+											</div>
+					                      	<a class="aa-browse-btn" href="category.html">Browse all Product <i class="fas fa-long-arrow-alt-right"></i></a>
+					                    </div>
+					                    <!-- / computer_networks_and_communications category -->
+					                  </div>       
+					              </div>
+					            </div>
+					          </div>
+					        </div>
+					      </div>
+					    </div>
+				  	</div>
+				  	<!-- / Products section -->
+				</div>
+			</div>
+
+			<div id="fh5co-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 col-padded-right">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="fh5co-blog animate-box">
+										<div class="title title-pin text-center">
+											<span class="posted-on">Jan. 1st 2019</span>
+											<h3><a href="#">Tua lung vao noi nho</a></h3>
+											<span class="category">Duong Hong Phuc</span>
+										</div>
+										<a href="#"><img class="img-responsive" src="images/tua-lung-vao-noi-nho.jpg" alt=""></a>
+										<div class="blog-text text-center">
+											<p><i class="fas fa-quote-left"></i> The price of maturity must be far apart. <i class="fas fa-quote-right"></i></p>
+											
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="fh5co-blog animate-box">
+										<div class="title text-center">
+											<span class="posted-on">Jan. 19th 2019</span>
+											<h3><a href="#">Neu biet tram nam la huu han...</a></h3>
+											<span class="category">Pham Lu An</span>
+										</div>
+										<a href="#"><img class="img-responsive" src="images/Neu-biet-tram-nam-la-huu-han.jpg" alt=""></a>
+										<div class="blog-text text-center">
+											<p><i class="fas fa-quote-left"></i> You grow when you are strong enough to become a fulcrum. <i class="fas fa-quote-right"></i></p>
+											
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="fh5co-blog animate-box">
+										<div class="title text-center">
+											<span class="posted-on">Feb. 15th 2019</span>
+											<h3><a href="#">Doi ngan dung ngu dai</a></h3>
+											<span class="category">Robin Sharma</span>
+										</div>
+										<a href="#"><img class="img-responsive" src="images/doi-ngan-dung-ngu-dai.jpg" alt=""></a>
+										<div class="blog-text text-center">
+											<p><i class="fas fa-quote-left"></i> Every end point opens a new starting point. <i class="fas fa-quote-right"></i></p>
+											
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="fh5co-blog animate-box">
+										<div class="title text-center">
+											<span class="posted-on">March. 3th 2019</span>
+											<h3><a href="#">Ke trom ky uc</a></h3>
+											<span class="category">Emily Colin</span>
+										</div>
+										<a href="#"><img class="img-responsive" src="images/ke-trom-ky-uc.jpg" alt=""></a>
+										<div class="blog-text text-center">
+											<p><i class="fas fa-quote-left"></i> Getting back to life is not an easy thing with a weak heart. <i class="fas fa-quote-right"></i></p>
+											
+										</div> 
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="fh5co-blog animate-box">
+										<div class="title text-center">
+											<span class="posted-on">May. 25th 2019</span>
+											<h3><a href="#">Ai cung xung dang duoc hanh phuc</a></h3>
+											<span class="category">Thu Ha</span>
+										</div>
+										<a href="#"><img class="img-responsive" src="images/Ai-cung-xung-dang-duoc-hanh-phuc.jpg" alt=""></a>
+										<div class="blog-text text-center">
+											<p><i class="fas fa-quote-left"></i> Nothing is meaningless, including pain and forgiveness for the past is the best way to be free. <i class="fas fa-quote-right"></i></p>
+											
+										</div> 
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<aside id="sidebar">
+							<div class="col-md-3">
+								<div class="side animate-box">
+									<div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+										<h2><span>About Us</span></h2>
+									</div>
+									<div class="fh5co-staff">
+										<img src="images/logo-CLB.png">
+										<h3><b>BAIT</b></h3>
+										<strong class="role">Book and Action Club</strong>
+										<p><i class="fas fa-quote-left"></i> Where young people are passionate about good books as well as devoted to the community, bring reading culture to everyone. <i class="fas fa-quote-right"></i></p>
+										<ul class="fh5co-social-icons">
+											<li><a href="https://www.facebook.com/clb.sachvahanhdong.uit/" target="_blank"><i class="icon-facebook"></i></a></li>
+											<li><a href="#"><i class="icon-twitter"></i></a></li>
+											<li><a href="http://tinyurl.com/Channel-CLBSVHDUIT" target="_blank"><i class="icon-youtube"></i></a></li>
+											<li><a href="#"><i class="icon-github"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="side animate-box">
+									<div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+										<h2><span>Latest Books</span></h2>
+									</div>
+									<div class="blog-entry">
+										<a href="#">
+											<img src="images/mai_mai_la_bao_xa.jpg" class="img-responsive" alt="">
+											<div class="desc">
+												<h3>Mai mai la bao xa</h3>
+												<span class="date">Diep Lac Vo Tam</span>
+											</div>
+										</a>
+									</div>
+									<div class="blog-entry">
+										<a href="#">
+											<img src="images/mai_mai_la_bao_xa.jpg" class="img-responsive" alt="">
+											<div class="desc">
+												<h3>Mai mai la bao xa</h3>
+												<span class="date">Diep Lac Vo Tam</span>
+											</div>
+										</a>
+									</div>
+									<div class="blog-entry">
+										<a href="#">
+											<img src="images/mai_mai_la_bao_xa.jpg" class="img-responsive" alt="">
+											<div class="desc">
+												<h3>Mai mai la bao xa</h3>
+												<span class="date">Diep Lac Vo Tam</span>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="side animate-box">
+									<div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+										<h2><span>Nominations</span></h2> <!-- đề cử -->
+									</div>
+									<ul class="nomination">
+										<li><a href="#"><i class="icon-check"></i>Lap trinh vien dau chi biet code</a></li>
+										<li><a href="#"><i class="icon-check"></i>Tuoi tre dang gia bao nhieu?</a></li>
+										<li><a href="#"><i class="icon-check"></i>Hoang tu be</a></li>
+										<li><a href="#"><i class="icon-check"></i>Chuyen con meo day hai au bay</a></li>
+										<li><a href="#"><i class="icon-check"></i>Nha gia kim</a></li>
+										<li><a href="#"><i class="icon-check"></i>Anh khong muon de em mot minh</a></li>
+									</ul>
+								</div>
+								<div class="side animate-box">
+									<div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
+										<h2><span>Intagram</span></h2>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="insta" style="background-image: url(images/cau-thang-sach.jpg);">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="fh5co-instagram">
+				<div class="container">
+					<div class="row animate-box">
+						<div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+							<h2><span>Instagram Posts</span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 nopadding animate-box" data-animate-effect="fadeIn">
+						<div class="insta" style="background-image: url(images/namiya.jpg);"></div>
+					</div>
+					<div class="col-md-3 nopadding animate-box" data-animate-effect="fadeIn">
+						<div class="insta" style="background-image: url(images/anh-khong-muon-de-em-mot-minh.jpg);"></div>
+					</div>
+					<div class="col-md-3 nopadding animate-box" data-animate-effect="fadeIn">
+						<div class="insta" style="background-image: url(images/hoang-tu-be.jpg);"></div>
+					</div>
+					<div class="col-md-3 nopadding animate-box" data-animate-effect="fadeIn">
+						<div class="insta" style="background-image: url(images/28-tuoi.jpg);"></div>
+					</div>
+				</div>
+			</div>
+
+			<footer id="fh5co-footer" role="contentinfo">
+				<div class="container">
+					<div class="row row-pb-md">
+						<div class="col-md-4 fh5co-widget">
+							<h4><b>Contact Information</b></h4>
+							<ul class="fh5co-footer-links">
+								<li>Book and action club of VNU-HCM University of Information and Technology</li>
+								<li>Quarter 6, Linh Trung Ward, Thu Duc District, Ho Chi Minh City</li>
+								<li>Phone: +84 334 891 751</li>
+								<li>Email: <a href="clb.sachvahanhdong.uit@gmail.com">clb.sachvahanhdong.uit@gmail.com</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<h4><b>Feedback</b></h4>
+							<ul class="fh5co-footer-links">
+								<li>Please send us your ideas, bug reports, suggestions! Any feedback would be appreciated.</li>
+								<li><a href="https://goo.gl/forms/jrIA835OJkPVtMYR2" target="_blank">Review - Feedback</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<h4><b>Services</b></h4>
+							<ul class="fh5co-footer-links">
+								<li>Process for borrowing books</li>
+								<li>Operation Hours:</li>
+									<ul>
+										<li>Monday to Friday: 7:30 - 16:30</li>
+										<li>Saturday: 8:00 - 16:00</li>
+									</ul>
+							</ul>
+						</div>
+					</div>
+
+					<div class="row copyright">
+						<div class="col-md-12 text-center">
+							<p>
+								<small class="block">&copy; Copyright 2019 BAIT. All Rights Reserved.</small> 
+								<small class="block">Designed by BAIT Club</small>
+							</p>
+							<p>
+								<ul class="fh5co-social-icons">
+									<li><a href="#"><i class="icon-twitter"></i></a></li>
+									<li><a href="https://www.facebook.com/clb.sachvahanhdong.uit/" target="_blank"><i class="icon-facebook"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin"></i></a></li>
+									<li><a href="http://tinyurl.com/Channel-CLBSVHDUIT" target="_blank"><i class="icon-youtube"></i></a></li>
+								</ul>
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</footer>
+		</div>
+
+		<div class="gototop js-top">
+			<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+		</div>
+		
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Flexslider -->
+		<script src="js/jquery.flexslider-min.js"></script>
+		<!-- Magnific Popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/magnific-popup-options.js"></script>
+		<!-- Main -->
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
+
